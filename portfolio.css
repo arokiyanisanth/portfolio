@@ -1,0 +1,135 @@
+body{background-color:black !important;}
+.intro{
+    display: flex;
+    justify-content: space-between;
+    margin: 0%;
+    margin-bottom: 10px;
+    
+    background-color: black;
+    
+}
+
+li {
+    display: inline-block;
+    padding: 20px
+}
+
+
+
+li a{
+    text-decoration: none;
+    color:red;
+    font-weight: bold;
+}
+a:hover{
+    color: aqua;
+}
+
+
+.image{
+    border-radius: 300px;
+    border-color: white;
+    border-width: 5px;
+    margin: 40px;
+    float: left;
+}
+.name{
+    position: relative;
+    top: 100px;
+    color:yellow;
+    font-weight: bold;font-style: oblique;
+    
+}
+.home1{
+    height: 1000px;
+    
+}
+.homebox{
+
+    margin-left: 700px;
+    height: 600px;
+    
+}
+.about{
+    color:red;
+    margin: 20PX;
+    margin-top:20px;
+   min-height: 1800px;
+}
+.skill{
+    color:red;
+    margin: 20PX;
+    margin-top:20px;
+    height: 1000px;
+}
+.contact{
+    margin-top: ;
+     text-align: center;
+    color: aqua;
+    height: 800px;
+   
+}
+.form{
+    display: flex;
+    justify-content: center;
+}
+
+a{
+    text-decoration: none;
+    color:blueviolet;
+    font-weight: 500px;
+    font-size: large;
+}
+
+
+  /* for mobile view css */
+@media only screen and (max-width: 420px) { 
+    body {
+        background-color:red;
+      }
+    .intro{
+        width: 100em;
+        font-weight: bolder;
+        font-size: xx-large;
+     } 
+    .image{
+        margin-left:150px;
+        float:none;
+        border-color: rgb(206, 17, 17);
+    border-width: 20px;
+    }
+    .homebox{
+        width: 100vh;
+        height: 500px;
+        margin-left:5em;
+        font-weight: bolder;
+        font-size: x-large;
+        
+
+    }
+    .about{
+        margin-top: 15em;
+        width: 100vh;
+        font-weight: bolder;
+        height: 150em;
+    }
+    .skill{
+        margin-top: 15em;
+        width: 100vh;
+        font-weight: bolder;
+        height: 50em;
+
+    }
+    .contact h1{
+        margin-left: 10em;
+       
+    }
+    .links{
+        margin-left: 2em;
+        width: 50em;
+       
+    }
+    .form{
+        display: none;
+    }
+  } 
