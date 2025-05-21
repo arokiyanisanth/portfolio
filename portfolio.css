@@ -4,10 +4,11 @@ body{background-color:black !important;}
     justify-content: space-between;
     margin: 0%;
     margin-bottom: 10px;
-    
+    position: relative;
     background-color: black;
     
 }
+
 
 li {
     display: inline-block;
@@ -28,33 +29,36 @@ a:hover{
 
 .image{
     border-radius: 300px;
-    border-color: white;
     border-width: 5px;
-    margin: 40px;
+    margin: auto;
+    height: auto;
+    width: auto;
     float: left;
 }
+
 .name{
     position: relative;
     top: 100px;
     color:yellow;
-    font-weight: bold;font-style: oblique;
+    font-weight: bold;
+    font-style: oblique;
     
 }
-.home1{
-    height: 1000px;
+.home1{ 
     
 }
 .homebox{
-
-    margin-left: 700px;
-    height: 600px;
+    height: 600px;  
+    display: flex;
+    flex-direction: column;
+   padding-left: 30px;
     
 }
 .about{
     color:red;
     margin: 20PX;
-    margin-top:20px;
-   min-height: 1800px;
+    margin-top:7em;
+   min-height: 1200px;
 }
 .skill{
     color:red;
@@ -63,10 +67,10 @@ a:hover{
     height: 1000px;
 }
 .contact{
-    margin-top: ;
-     text-align: center;
+    margin-top:15em ;
+    text-align: center;
     color: aqua;
-    height: 800px;
+    height: auto;
    
 }
 .form{
@@ -83,36 +87,49 @@ a{
 
 
   /* for mobile view css */
-@media only screen and (max-width: 420px) { 
-    body {
+@media (max-width:768px)  {
+    /* body {
         background-color:red;
       }
     .intro{
         width: 100em;
         font-weight: bolder;
         font-size: xx-large;
-     } 
+     }  */
     .image{
-        margin-left:150px;
+        
         float:none;
         border-color: rgb(206, 17, 17);
     border-width: 20px;
     }
+    .cert-img{
+    
+    margin: auto;
+    min-height: none;
+    min-width: none;
+    float: left;
+}
     .homebox{
-        width: 100vh;
-        height: 500px;
-        margin-left:5em;
+       margin-left: 10px;
         font-weight: bolder;
         font-size: x-large;
         
 
     }
-    .about{
-        margin-top: 15em;
-        width: 100vh;
+     .about{
+        margin-top: 5em;
+        min-width: none;
         font-weight: bolder;
-        height: 150em;
+        min-height: 100em;
     }
+    .contact{
+    margin-top:auto ;
+    text-align: center;
+    color: aqua;
+    height: auto;
+   
+}
+    /*
     .skill{
         margin-top: 15em;
         width: 100vh;
@@ -132,4 +149,5 @@ a{
     .form{
         display: none;
     }
-  } 
+  }  */
+}
